@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetic Sound Measurement Device</title>
+  <style>
+    body {
+      font-family: Helvetica;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer {
+      color: #afafaf;
+      font-size: 0.75em;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin: 7.5vh 0;
+    }
+
+    .ch {
+      padding-top: 1em;
+      color: #afafaf;
+      line-height: 1.2em;
+      font-weight: 400;
+    }
+
+    .ch h2,
+    .ch h3 {
+      font-weight: 400;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 4em;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      background: #eee;
+    }
+
+    nav {
+      background: rgba(255, 255, 255, 0.75);
+      position: sticky;
+      top: 0;
+      height: 7.5vh;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid black;
+      margin-bottom: 30vh;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 5em;
+    }
+
+    nav li::before {
+      content: "—";
+    }
+
+    section {
+      min-height: 60vh;
+      margin: 5vh;
+    }
+
+    section[id] {
+      padding-top: 10vh;
+    }
+
+    img,
+    iframe {
+      width: 85vh;
+    }
+
+    iframe {
+      height: 60vh;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body id="project">
+  <nav>
+    <ul>
+      <li><a href="#project">project</a></li>
+      <li><a href="#instruction">instruction</a></li>
+      <li><a href="#demo">demos</a></li>
+      <li><a href="#qna">Q&A</a></li>
+      <!-- <li><a href="#works">works</a></li> -->
+    </ul>
+  </nav>
+
+  <section>
+    <h1>Poetic Measuring Device
+      <div class="ch">
+        诗意测量工具
+      </div>
+    </h1>
+  </section>
+
+  <section>
+    <h2>What’s this about?</h2>
+    <p>Randomness.
+      <p>More specifically, how to create & control randomness using p5.js
+        <div class="ch">
+          <h2>这关于什么？</h2>
+          <p>随机性。
+            <p>再确切一些，如何使用 p5.js 创造和控制随机性。
+        </div>
+  </section>
+
+  <section>
+    <h2>Keep these questions in mind:</h2>
+    <p>What is being measured?
+      <p>How to communicate the thing being measured?
+        <p>How does the user interface the devices?
+          <div class="ch">
+            <h2>看例子之的时候请想一下这几个问题：</h2>
+            <p>测量的是什么？
+              <p>被测量的东西是如何被表达的？
+                <p>观众是怎样面对这些工具的？
+          </div>
+  </section>
+
+  <section>
+    <h2>Examples</h2>
+    <div class="ch">
+      <h2>案例</h2>
+    </div>
+
+    <h3>3 Standard Stoppages</h3>
+    <p>Marcel Duchamp. 1913 – 14.</p>
+    <img src="imgs/duchamp.jpg" alt="">
+
+    <h3>One Year Performance (Time Clock Piece)</h3>
+    <p>Tsching Heisch. 1980 – 81.</p>
+    <img src="imgs/Hsieh.jpg" alt="">
+
+    <h3>Grewingk Glacier</h3>
+    <p>Adrien Segal. 2015.</p>
+    <img src="imgs/segal.webp" alt="">
+  </section>
+
+  <section id="instruction">
+    <h2>Instructions</h2>
+    <p>Create a digital measurement device that:
+      <ul>
+        <li>relect at least one property of something (anything) </li>
+        <li>involve some randomness</li>
+      </ul>
+      <p>Your app will have two parts:
+        <ul>
+          <li>the device itself </li>
+          <li>a brief description of your project (what is being measured, how, etc.)</li>
+        </ul>
+        <p>
+          <a href="/assets/starter.zip" download>
+            –– download starter kit
+          </a>
+        </p>
+
+        <div class="ch">
+          <h2>说明</h2>
+          <p>创作的测量工具需要：
+            <ul>
+              <li>至少反应被测事物的一个属性（被测物不限）</li>
+              <li>有一些随机性</li>
+            </ul>
+            <p>你的项目由两部分组成：
+              <ul>
+                <li>工具本身 </li>
+                <li>对你项目的简单描述（如，测量对象、方法等）</li>
+              </ul>
+              <a href="/workshop/starter.zip" download>
+                –– 下载初始文件
+              </a>
+        </div>
+  </section>
+
+  <section id="demo">
+    <h2>Distortion</h2>
+    <div class="ch">
+      <h2>失真</h2>
+    </div>
+
+    <h3>1. <code>random()</code> </h3>
+    <p>Return a random number.</p>
+    <iframe src="demos/random/random.html"></iframe>
+    <iframe src="demos/random/seed.html"></iframe>
+
+    <h3>2. <code>noise()</code> </h3>
+    <p>Generates a random sequence appears more natural than random.</p>
+    <iframe src="demos/noise/noise.html"></iframe>
+    <iframe src="demos/noise/seed.html"></iframe>
+    <iframe src="demos/noise/noise2.html"></iframe>
+    <iframe src="demos/noise/noiseDetail.html"></iframe>
+
+    <h3>3. <code>sin(), cos()</code> </h3>
+    <p>Calculates the sine/cosine of an angle. Values are returned in the range -1 to 1.</p>
+    <iframe src="demos/sincos/sincos.html"></iframe>
+  </section>
+
+  <section id="demo">
+    <h2>Input</h2>
+    <div class="ch">
+      <h2>输入</h2>
+    </div>
+
+    <h3>1. Mouse interaction</h3>
+    <ul>
+      <li>
+        <code>mouseX, mouseY</code>
+      </li>
+      <li>
+        <code>
+          mouseMoved()
+          mouseDragged()
+          mousePressed()
+          mouseReleased()
+          mouseClicked()</code>
+      </li>
+    </ul>
+
+
+    <iframe src="demos/sincos/index.html"></iframe>
+
+    <h3>2. Sound</h3>
+    <ul>
+      <li> <code>loadSound()</code> </li>
+      <li> <code>p5.AudioIn</code> </li>
+    </ul>
+    <iframe src="demos/input/mic.html"></iframe>
+
+    <h3>3. Image</h3>
+    <ul>
+      <li> <code>loadImage()</code> </li>
+      <li> <code>loadPixels(), updatePixels()</code> </li>
+    </ul>
+    <iframe src="demos/input/image.html"></iframe>
+
+    <h3>4. Camera</h3>
+    <ul>
+      <li> <code>createVideo()</code> </li>
+      <li> <code>createCapture()</code> </li>
+    </ul>
+    <a href="demos/input/video.html" target="_blank">
+      –– see demo
+    </a>
+    <!-- <iframe src="demos/input/video.html"></iframe> -->
+
+    <h3>5. Time</h3>
+    <ul>
+      <li> <code>second(), minute(), hour(), day(), month(), year()</code> </li>
+    </ul>
+    <iframe src="demos/time/index.html"></iframe>
+
+    <h3>6. Text</h3>
+    <p>Rita.js</p>
+    <iframe src="demos/input/text/txt.html"></iframe>
+  </section>
+
+  <section id="qna">
+    <h2>Q&A</h2>
+    <!-- <h3>...</h3>
+    <p>...</p> -->
+  </section>
+
+  <footer> 2019.2.24 workshop @Processing Community Day, Shanghai by Erin Zhang</footer>
+</body>
+
+</html>
