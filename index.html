@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -21,15 +21,17 @@
       margin: 7.5vh 0;
     }
 
-    .ch {
+    /* .ch { */
+    *[lang="zh-Hans"] {
       padding-top: 1em;
+      color: #afafaf;
       color: #afafaf;
       line-height: 1.2em;
       font-weight: 400;
     }
 
-    .ch h2,
-    .ch h3 {
+    *[lang="zh-Hans"] h2,
+    *[lang="zh-Hans"] h3 {
       font-weight: 400;
       margin-top: 0;
     }
@@ -107,7 +109,7 @@
 
   <section>
     <h1>Poetic Measuring Device
-      <div class="ch">
+      <div lang="zh-Hans">
         诗意测量工具
       </div>
     </h1>
@@ -117,7 +119,7 @@
     <h2>What’s this about?</h2>
     <p>Randomness.
       <p>More specifically, how to create & control randomness using p5.js
-        <div class="ch">
+        <div lang="zh-Hans">
           <h2>这关于什么？</h2>
           <p>随机性。
             <p>再确切一些，如何使用 p5.js 创造和控制随机性。
@@ -129,7 +131,7 @@
     <p>What is being measured?
       <p>How to communicate the thing being measured?
         <p>How does the user interface the devices?
-          <div class="ch">
+          <div lang="zh-Hans">
             <h2>看例子之的时候请想一下这几个问题：</h2>
             <p>测量的是什么？
               <p>被测量的东西是如何被表达的？
@@ -139,7 +141,7 @@
 
   <section>
     <h2>Examples</h2>
-    <div class="ch">
+    <div lang="zh-Hans">
       <h2>案例</h2>
     </div>
 
@@ -174,7 +176,7 @@
           </a>
         </p>
 
-        <div class="ch">
+        <div lang="zh-Hans">
           <h2>说明</h2>
           <p>创作的测量工具需要：
             <ul>
@@ -194,30 +196,30 @@
 
   <section id="demo">
     <h2>Distortion</h2>
-    <div class="ch">
+    <div lang="zh-Hans">
       <h2>失真</h2>
     </div>
 
     <h3>1. <code>random()</code> </h3>
     <p>Return a random number.</p>
-    <iframe src="demos/random/random.html"></iframe>
-    <iframe src="demos/random/seed.html"></iframe>
+    <iframe src="demos/distortion/random/random.html"></iframe>
+    <iframe src="demos/distortion/random/seed.html"></iframe>
 
     <h3>2. <code>noise()</code> </h3>
     <p>Generates a random sequence appears more natural than random.</p>
-    <iframe src="demos/noise/noise.html"></iframe>
-    <iframe src="demos/noise/seed.html"></iframe>
-    <iframe src="demos/noise/noise2.html"></iframe>
-    <iframe src="demos/noise/noiseDetail.html"></iframe>
+    <iframe src="demos/distortion/noise/noise.html"></iframe>
+    <iframe src="demos/distortion/noise/seed.html"></iframe>
+    <iframe src="demos/distortion/noise/noise2.html"></iframe>
+    <iframe src="demos/distortion/noise/noiseDetail.html"></iframe>
 
     <h3>3. <code>sin(), cos()</code> </h3>
     <p>Calculates the sine/cosine of an angle. Values are returned in the range -1 to 1.</p>
-    <iframe src="demos/sincos/sincos.html"></iframe>
+    <iframe src="demos/distortion/sincos/sincos.html"></iframe>
   </section>
 
   <section id="demo">
     <h2>Input</h2>
-    <div class="ch">
+    <div lang="zh-Hans">
       <h2>输入</h2>
     </div>
 
@@ -235,30 +237,28 @@
           mouseClicked()</code>
       </li>
     </ul>
-
-
-    <iframe src="demos/sincos/index.html"></iframe>
+    <iframe src="demos/input/mouse/index.html"></iframe>
 
     <h3>2. Sound</h3>
     <ul>
       <li> <code>loadSound()</code> </li>
       <li> <code>p5.AudioIn</code> </li>
     </ul>
-    <iframe src="demos/input/mic.html"></iframe>
+    <iframe src="demos/input/sound/index.html"></iframe>
 
     <h3>3. Image</h3>
     <ul>
       <li> <code>loadImage()</code> </li>
       <li> <code>loadPixels(), updatePixels()</code> </li>
     </ul>
-    <iframe src="demos/input/image.html"></iframe>
+    <iframe src="demos/input/image/index.html"></iframe>
 
-    <h3>4. Camera</h3>
+    <h3>4. Video</h3>
     <ul>
       <li> <code>createVideo()</code> </li>
       <li> <code>createCapture()</code> </li>
     </ul>
-    <a href="demos/input/video.html" target="_blank">
+    <a href="demos/input/video/input.html" target="_blank">
       –– see demo
     </a>
     <!-- <iframe src="demos/input/video.html"></iframe> -->
@@ -267,11 +267,11 @@
     <ul>
       <li> <code>second(), minute(), hour(), day(), month(), year()</code> </li>
     </ul>
-    <iframe src="demos/time/index.html"></iframe>
+    <iframe src="demos/input/time/index.html"></iframe>
 
     <h3>6. Text</h3>
     <p>Rita.js</p>
-    <iframe src="demos/input/text/txt.html"></iframe>
+    <iframe src="demos/input/text/index.html"></iframe>
   </section>
 
   <section id="qna">
