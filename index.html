@@ -4,138 +4,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poetic Sound Measurement Device</title>
-  <style>
-    body {
-      font-family: Helvetica;
-      font-size: 16px;
-      padding: 0;
-      margin: 0;
-    }
-
-    footer {
-      color: #afafaf;
-      font-size: 0.75em;
-      letter-spacing: 0.02em;
-      text-align: center;
-      margin: 7.5vh 0;
-    }
-
-    /* .ch { */
-    *[lang="zh-Hans"] {
-      padding-top: 1em;
-      color: #afafaf;
-      color: #afafaf;
-      line-height: 1.2em;
-      font-weight: 400;
-    }
-
-    *[lang="zh-Hans"] h2,
-    *[lang="zh-Hans"] h3 {
-      font-weight: 400;
-      margin-top: 0;
-    }
-
-    h3 {
-      margin-top: 4em;
-    }
-
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: #000;
-    }
-
-    a:hover {
-      background: #eee;
-    }
-
-    nav {
-      background: rgba(255, 255, 255, 0.75);
-      position: sticky;
-      top: 0;
-      height: 7.5vh;
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid black;
-      margin-bottom: 30vh;
-    }
-
-    nav ul {
-      list-style-type: none;
-      display: flex;
-    }
-
-    nav li {
-      margin-right: 5em;
-    }
-
-    nav li::before {
-      content: "—";
-    }
-
-    section {
-      min-height: 60vh;
-      margin: 5vh;
-    }
-
-    section[id] {
-      padding-top: 10vh;
-    }
-
-    img,
-    iframe {
-      width: 85vh;
-    }
-
-    iframe {
-      height: 60vh;
-      border: none;
-      outline: none;
-    }
-  </style>
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/icon.png">
+  <title>Poetic Measuring Device</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body id="project">
   <nav>
     <ul>
-      <li><a href="#project">project</a></li>
+      <li><a href="#project">PMD</a></li>
       <li><a href="#instruction">instruction</a></li>
-      <li><a href="#demo">demos</a></li>
-      <li><a href="#qna">Q&A</a></li>
+      <li><a href="demos.html">demos</a></li>
+      <!-- <li><a href="#qna">Q&A</a></li> -->
+      <li><a href="ref.html">ref</a></li>
+      <li class="plane"><a href="mailto:zyyerin@gmail.com?subject=⭐PMD | your name">✈️</a></li>
       <!-- <li><a href="#works">works</a></li> -->
     </ul>
   </nav>
 
-  <section>
-    <h1>Poetic Measuring Device
-      <div lang="zh-Hans">
-        诗意测量工具
-      </div>
-    </h1>
+  <section class="main">
+    <h1>Poetic Measuring Device</h1>
+    <p>create & control randomness using p5.js</p>
+    <div lang="zh-Hans">
+      <h1>诗意测量工具</h1>
+      <p>使用 p5.js 创造和控制随机性</p>
+    </div>
   </section>
 
   <section>
-    <h2>What’s this about?</h2>
-    <p>Randomness.
-      <p>More specifically, how to create & control randomness using p5.js
-        <div lang="zh-Hans">
-          <h2>这关于什么？</h2>
-          <p>随机性。
-            <p>再确切一些，如何使用 p5.js 创造和控制随机性。
-        </div>
+    <h2>Today's agenda</h2>
+    <ol>
+      <li>Project introduction</li>
+      <li>Demos</li>
+      <li>Q & A</li>
+      <li>Break</li>
+      <li>Work time</li>
+      <li>Share and chat</li>
+    </ol>
+    <div lang="zh-Hans">
+      <h2>日程安排</h2>
+      <ol>
+        <li>项目介绍</li>
+        <li>Demos</li>
+        <li>Q & A</li>
+        <li>休息</li>
+        <li>工作时间</li>
+        <li>分享与交流</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="main">
+    <h2>What is a Poetic Measuring Device?
+      <div lang="zh-Hans">
+        诗意测量工具是什么？
+      </div>
+    </h2>
   </section>
 
   <section>
     <h2>Keep these questions in mind:</h2>
     <p>What is being measured?
       <p>How to communicate the thing being measured?
-        <p>How does the user interface the devices?
+        <p>How does a user interface the device?
           <div lang="zh-Hans">
-            <h2>看例子之的时候请想一下这几个问题：</h2>
+            <h2>看例子的时候请想一下这几个问题：</h2>
             <p>测量的是什么？
               <p>被测量的东西是如何被表达的？
-                <p>观众是怎样面对这些工具的？
+                <p>用户如何使用这个工具？
           </div>
   </section>
 
@@ -147,33 +83,50 @@
 
     <h3>3 Standard Stoppages</h3>
     <p>Marcel Duchamp. 1913 – 14.</p>
+    <p class="caption">"If a straight horizontal thread one meter long falls from a height of one meter onto a horizontal plane twisting as it pleases, [it] creates a new image of the unit of length."</p>
     <img src="imgs/duchamp.jpg" alt="">
+    <p><i>Network of Stoppages.</i> Marcel Duchamp. 1914.</p>
+    <img src="imgs/duchamp2.jpg" alt="">
 
-    <h3>One Year Performance (Time Clock Piece)</h3>
+    <h3>One Year Performance 1980 – 1981 (Time Clock Piece)</h3>
     <p>Tsching Heisch. 1980 – 81.</p>
+    <p class="caption">"I'm not trying to make concepts about how to pass time. I'm just passing time."</p>
     <img src="imgs/Hsieh.jpg" alt="">
 
-    <h3>Grewingk Glacier</h3>
+    <h3>
+      <a href="https://www.adriensegal.com/grewingk-glacier" target="_blank">Grewingk Glacier</a>
+    </h3>
     <p>Adrien Segal. 2015.</p>
     <img src="imgs/segal.webp" alt="">
+    <br>
+    <img src="imgs/segal2.jpg" alt="">
+    <p>For more examples, see
+      <a href="ref.html"> references 3-7</a>.
+    </p>
+  </section>
+
+  <section class="main">
+    <h2>A tool measures a property with distortion.
+      <div lang="zh-Hans">
+        一个失真地测量某种属性的工具。
+      </div>
+    </h2>
   </section>
 
   <section id="instruction">
     <h2>Instructions</h2>
-    <p>Create a digital measurement device that:
+    <p>Create a digital measuring device that:
       <ul>
-        <li>relect at least one property of something (anything) </li>
+        <li>reflect at least one property of something (no limit) </li>
         <li>involve some randomness</li>
       </ul>
-      <p>Your app will have two parts:
+      <p>Your project will have two parts:
         <ul>
           <li>the device itself </li>
           <li>a brief description of your project (what is being measured, how, etc.)</li>
         </ul>
         <p>
-          <a href="/assets/starter.zip" download>
-            –– download starter kit
-          </a>
+          <a href="https://editor.p5js.org/" target="_blank">p5 online editor</a>
         </p>
 
         <div lang="zh-Hans">
@@ -183,102 +136,22 @@
               <li>至少反应被测事物的一个属性（被测物不限）</li>
               <li>有一些随机性</li>
             </ul>
-            <p>你的项目由两部分组成：
-              <ul>
-                <li>工具本身 </li>
-                <li>对你项目的简单描述（如，测量对象、方法等）</li>
-              </ul>
-              <a href="/workshop/starter.zip" download>
-                –– 下载初始文件
-              </a>
+            <p>你的项目由两部分组成：</p>
+            <ul>
+              <li>工具本身 </li>
+              <li>对你项目的简单描述（如，测量对象、方法等）</li>
+            </ul>
+            <p>
+              <a href="https://editor.p5js.org/" target="_blank">p5线上编辑器</a>
+            </p>
         </div>
   </section>
 
-  <section id="demo">
-    <h2>Distortion</h2>
-    <div lang="zh-Hans">
-      <h2>失真</h2>
-    </div>
-
-    <h3>1. <code>random()</code> </h3>
-    <p>Return a random number.</p>
-    <iframe src="demos/distortion/random/random.html"></iframe>
-    <iframe src="demos/distortion/random/seed.html"></iframe>
-
-    <h3>2. <code>noise()</code> </h3>
-    <p>Generates a random sequence appears more natural than random.</p>
-    <iframe src="demos/distortion/noise/noise.html"></iframe>
-    <iframe src="demos/distortion/noise/seed.html"></iframe>
-    <iframe src="demos/distortion/noise/noise2.html"></iframe>
-    <iframe src="demos/distortion/noise/noiseDetail.html"></iframe>
-
-    <h3>3. <code>sin(), cos()</code> </h3>
-    <p>Calculates the sine/cosine of an angle. Values are returned in the range -1 to 1.</p>
-    <iframe src="demos/distortion/sincos/sincos.html"></iframe>
-  </section>
-
-  <section id="demo">
-    <h2>Input</h2>
-    <div lang="zh-Hans">
-      <h2>输入</h2>
-    </div>
-
-    <h3>1. Mouse interaction</h3>
-    <ul>
-      <li>
-        <code>mouseX, mouseY</code>
-      </li>
-      <li>
-        <code>
-          mouseMoved()
-          mouseDragged()
-          mousePressed()
-          mouseReleased()
-          mouseClicked()</code>
-      </li>
-    </ul>
-    <iframe src="demos/input/mouse/index.html"></iframe>
-
-    <h3>2. Sound</h3>
-    <ul>
-      <li> <code>loadSound()</code> </li>
-      <li> <code>p5.AudioIn</code> </li>
-    </ul>
-    <iframe src="demos/input/sound/index.html"></iframe>
-
-    <h3>3. Image</h3>
-    <ul>
-      <li> <code>loadImage()</code> </li>
-      <li> <code>loadPixels(), updatePixels()</code> </li>
-    </ul>
-    <iframe src="demos/input/image/index.html"></iframe>
-
-    <h3>4. Video</h3>
-    <ul>
-      <li> <code>createVideo()</code> </li>
-      <li> <code>createCapture()</code> </li>
-    </ul>
-    <a href="demos/input/video/input.html" target="_blank">
-      –– see demo
-    </a>
-    <!-- <iframe src="demos/input/video.html"></iframe> -->
-
-    <h3>5. Time</h3>
-    <ul>
-      <li> <code>second(), minute(), hour(), day(), month(), year()</code> </li>
-    </ul>
-    <iframe src="demos/input/time/index.html"></iframe>
-
-    <h3>6. Text</h3>
-    <p>Rita.js</p>
-    <iframe src="demos/input/text/index.html"></iframe>
-  </section>
-
-  <section id="qna">
+  <!-- <section id="qna" class="main">
     <h2>Q&A</h2>
-    <!-- <h3>...</h3>
-    <p>...</p> -->
-  </section>
+    <h3>...</h3>
+    <p>...</p>
+  </section> -->
 
   <footer> 2019.2.24 workshop @Processing Community Day, Shanghai by Erin Zhang</footer>
 </body>
